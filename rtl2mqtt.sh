@@ -15,7 +15,7 @@ PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 
 # Start the listener and enter an endless loop
 #/usr/local/bin/rtl_433 -F json -R 43 |  while read line
-/usr/local/bin/rtl_433 -a |  while read line
+/usr/local/bin/rtl_433 -g 40 -f 433906000 -A |  while read line
 do
 # Log to file if file exists.
 # Create file with touch /tmp/rtl_433.log if logging is needed
